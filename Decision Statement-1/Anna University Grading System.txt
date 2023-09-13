@@ -1,0 +1,68 @@
+Anna University Grading System
+The newly appointed Vice-Chancellor of Anna University wanted to create an automated grading system for the students to check their grade. When a student enters a mark, the grading system displays the corresponding grade. Write a program to solve the given problem. The grades for marks 100 - S, 90-99 is A, 80-89 is B, 70-79 is C, 60-69 is D, 50-59 is E and less than 50 is F.
+Input format:
+
+The input consists of one integer which corresponds to the marks scored by the student
+
+
+
+Output format:
+
+If a student marks greater than 100, print "Invalid Input". Otherwise, print the grade.
+
+
+
+Sample Input:
+
+78
+
+
+
+Sample Output:
+
+C
+
+Solution:
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        int num;
+		Scanner obj=new Scanner(System.in);
+		num=obj.nextInt();
+		if(num==100)
+		{
+		    System.out.print("S");
+		}
+		else if(num>=90 && num<=99)
+		{
+		    System.out.print("A");
+		}
+		else if(num>=80 && num<=89)
+		{
+		    System.out.print("B");
+		}
+		else if(num>=70 && num<=79)
+		{
+		    System.out.print("C");
+		}
+		else if(num>=60 && num<=69)
+		{
+		    System.out.print("D");
+		}
+		else if(num>=50 && num<=59)
+		{
+		    System.out.print("E");
+		}
+		else if(num<50)
+		{
+		    System.out.print("F");
+		}
+		else if(num>100)
+		{
+		    System.out.print("Invalid Input");
+		}
+    }
+}
